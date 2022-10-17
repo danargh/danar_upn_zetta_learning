@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>User Input</title>
+   </head>
+   <body>
+      <header
+         style="
+            width: 800px;
+            margin: auto;
+            background-color: rgb(238, 238, 238);
+            padding: 16px;
+         "
+      >
+         <h1 style="text-align: center">User Input</h1>
+      </header>
+      <main
+         style="
+            width: 800px;
+            margin: auto;
+            background-color: rgb(238, 238, 238);
+            padding: 16px;
+         "
+      >
+         <form action="#">
+            <ul style="list-style-type: none">
+               <li>
+                  <label for="firstname">firstname*</label> <br />
+                  <input type="text" name="firstname" id="firstname" />
+               </li>
+               <li>
+                  <label for="lastname">lastname*</label> <br />
+                  <input type="text" name="lastname" id="lastname" />
+               </li>
+               <li>
+                  <label for="biography">Biography</label>
+                  <br />
+                  <textarea
+                     name="biography"
+                     id="biography"
+                     cols="30"
+                     rows="10"
+                     placeholder="Type something..."
+                  ></textarea>
+               </li>
+               <li>
+                  <span>Gender</span> <br />
+                  <input type="radio" name="man" id="man" />
+                  <label for="man">Man</label>
+                  <input type="radio" name="women" id="women" />
+                  <label for="women">Women</label>
+               </li>
+               <li>
+                  <label for="email">email</label> <br />
+                  <input type="email" name="email" id="email" />
+               </li>
+               <li>
+                  <label for="phone">phone</label> <br />
+                  <input type="tel" name="phone" id="phone" />
+               </li>
+               <li>
+                  <label for="age">age</label> <br />
+                  <input type="number" name="age" id="age" />
+               </li>
+               <li>
+                  <label for="url">url</label> <br />
+                  <input type="url" name="url" id="url" />
+               </li>
+            </ul>
+         </form>
+      </main>
+      <footer style="width: 800px; margin: auto">
+         <table style="width: 100%">
+            <tr>
+               <td>
+                  <a
+                     style="text-decoration: none"
+                     href="https://www.instagram.com/danargh_/?next=%2F"
+                     ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                        alt="instagram"
+                        width="16px"
+                     />
+                  </a>
+                  <span>My Instagram</span>
+               </td>
+               <td>
+                  <a href="index.html" style="text-decoration: none">Back</a>
+               </td>
+               <td>
+                  <p style="text-align: right">&#169; copyright2022</p>
+               </td>
+            </tr>
+         </table>
+      </footer>
+   </body>
+</html>
