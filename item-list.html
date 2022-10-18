@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+         rel="stylesheet"
+      />
+      <style>
+         thead {
+            font-weight: 700;
+         }
+         thead,
+         tbody {
+            padding: 16px;
+         }
+         tbody:nth-child(even) {
+            background-color: gainsboro;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav style="width: 800px; margin: auto">
+            <ul style="text-align: center; background-color: gainsboro">
+               <li style="display: inline-block; padding: 16px">
+                  <span class="ri-home-fill"></span> Home
+               </li>
+               <li style="display: inline-block; padding: 16px">
+                  <span class="ri-shopping-bag-3-fill"></span>
+                  <a style="text-decoration: none" href="item.html">Item</a>
+               </li>
+               <li style="display: inline-block; padding: 16px">
+                  <span class="ri-file-list-3-fill"></span>
+                  <a style="text-decoration: none" href="item-list.html"
+                     >Item List</a
+                  >
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section
+            style="
+               overflow-x: auto;
+               width: 800px;
+               margin: auto;
+               /* background-color: gainsboro; */
+            "
+         >
+            <table
+               style="
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                  width: 1500px;
+                  margin: 24px;
+               "
+            >
+               <thead>
+                  <td>Image</td>
+                  <td>Country</td>
+                  <td>Name</td>
+                  <td>Email</td>
+                  <td>Password</td>
+                  <td>Price</td>
+                  <td>Description</td>
+                  <td>Card type</td>
+                  <td>Card number</td>
+                  <td>Expiration date</td>
+               </thead>
+               <tbody>
+                  <td>
+                     <img
+                        src="https://images.template.net/736/Free-Vintage-Book-Cover-Template-2x.jpg"
+                        alt="item photos"
+                        width="100px"
+                     />
+                  </td>
+                  <td>ID</td>
+                  <td>Danar Ghulamsyah</td>
+                  <td>danargh@gmail.com</td>
+                  <td>********</td>
+                  <td>Rp200.000</td>
+                  <td style="width: 400px">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Nemo laborum excepturi quaerat ex quae cum hic perspiciatis
+                     voluptates nulla doloribus.
+                  </td>
+                  <td>Visa</td>
+                  <td>123456789</td>
+                  <td>05/26</td>
+               </tbody>
+            </table>
+         </section>
+      </main>
+   </body>
+</html>
