@@ -5,25 +5,73 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>CSS ZettaCamp Day 1 Project 1</title>
+      <style>
+         article {
+            width: 800px;
+            margin: auto;
+            padding: 16px;
+            background-color: gainsboro;
+            border-radius: 16px;
+         }
+         footer {
+            width: 800px;
+            margin: auto;
+            padding: 16px;
+         }
+         table {
+            width: 100%;
+            border-collapse: collapse;
+         }
+         thead {
+            text-align: center;
+            font-weight: 700;
+         }
+         .row-1 {
+            background-color: green;
+         }
+         .row-2 {
+            background-color: red;
+         }
+         .row-3 {
+            background-color: blue;
+         }
+         td {
+            border: 2px solid black;
+         }
+      </style>
    </head>
-   <body style="font-family: Arial, Tahoma, sans-serif;">
+   <body style="font-family: Arial, Tahoma, sans-serif">
       <header>
-         <h1 style="text-align: center;">Project 1 : Inline Styling</h1s>
+         <h1 style="text-align: center">Project 2 : Embedded Styling</h1>
       </header>
       <main>
-         <article style="width: 800px; margin: auto; padding: 16px; background-color: gainsboro; border-radius: 24px;">
-            <header>
-               <h2 style="color: red">Superman</h2>
-            </header>
-            <section>
-               <p>Debut Date : 18 August 1999</p>
-               <p style="color: green">SuperPower : Man of Steel</p>
-               <p>Profile : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa voluptatibus earum, natus dolor sequi dolorem ad eveniet fuga doloremque harum. Numquam animi exercitationem labore temporibus ab officiis, nemo, hic saepe, quasi suscipit vitae sed. Earum unde facere, id libero repellat suscipit voluptatem excepturi ab corrupti, quia adipisci autem aspernatur?</p>
-            </section>
+         <article>
+            <table>
+               <thead>
+                  <td>Hobby</td>
+                  <td>Favorite Movies</td>
+                  <td>Favorite Song</td>
+               </thead>
+               <tbody>
+                  <tr class="row-1">
+                     <td>Menonton Youtube</td>
+                     <td>Spongebob Squarpants</td>
+                     <td>Ya Maulana Ya Allah</td>
+                  </tr>
+                  <tr class="row-2">
+                     <td>Jogging</td>
+                     <td>Marvel Cinematic</td>
+                     <td>Dengan Caraku</td>
+                  </tr>
+                  <tr class="row-3">
+                     <td>Berenang</td>
+                     <td>Kingsman</td>
+                     <td>Sholawat Nabi</td>
+                  </tr>
+               </tbody>
+            </table>
          </article>
       </main>
-      <footer style="width: 800px; margin:auto; padding: 16px" >
-         copyright@2022
-      </footer>
+      <footer style="text-align: center">copyright@2022</footer>
    </body>
 </html>
