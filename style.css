@@ -1,0 +1,15 @@
+article {
+   width: 800px;
+   margin: auto;
+   padding: 16px;
+   background-color: gainsboro;
+   border-radius: 16px;
+}
+footer {
+   width: 800px;
+   margin: auto;
+   padding: 16px;
+}
+p::first-letter {
+   font-size: 32px;
+}
