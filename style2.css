@@ -29,17 +29,19 @@ main::before {
 }
 
 article {
-   width: 800px;
+   width: 500px;
    margin: 0 auto;
    margin-top: 150px;
-}
-section {
-   padding: 16px;
-   border-radius: 16px;
    display: flex;
-   flex-direction: row;
    justify-content: space-around;
 }
+article section {
+   background-color: gainsboro;
+   padding: 16px;
+   height: 200px;
+   overflow: auto;
+}
+
 footer {
    width: 800px;
    margin: auto;
