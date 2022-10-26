@@ -47,6 +47,7 @@ function bookPurchase(
    return {
       judulBuku: title,
       Jumlah: `${amount} buku`,
+      Harga: `Rp${price}`,
       TotalHarga: `Rp${totalPrice}`,
       StatusBayar: isPurchased === true ? "lunas" : "belum lunas",
       Pesan: message,
