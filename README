@@ -4,3 +4,8 @@
    b. Blok penyusun dasarnya adalah NgModules yang merupakan sekumpulan komponen untuk domain aplikasi dan aluar kerja
    c. Setiap aplikasi angular memiliki modul root, yang dinamai appModule
 3. Module yang digunakan Angular : NgModule, root, NgModule Router, dll
+
+# Pertanyaan tentang Youtube 
+1. Komponen dapat dipecah berdasarkan fungsionalitas. Setiap komponen harus memiliki satu fungsionalitas agar code yang dibuat mudah di mentenance
+2. Mengelompokan module dapat dilakukan dengan membuat folder
+3. Hasil dari aplikasi angular adalah file html, javascript, css yang mana ekstensi file tersebut bisa dibaca oleh browser
