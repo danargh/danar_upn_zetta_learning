@@ -1,0 +1,6 @@
+1. Angular adalah framework yang digunakan untuk membangun aplikasi one-page client menggunakan HTML dan Typescript
+2. Konsep angular :
+   a. Ditulis menggunakan bahasa Typescript
+   b. Blok penyusun dasarnya adalah NgModules yang merupakan sekumpulan komponen untuk domain aplikasi dan aluar kerja
+   c. Setiap aplikasi angular memiliki modul root, yang dinamai appModule
+3. Module yang digunakan Angular : NgModule, root, NgModule Router, dll
