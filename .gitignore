@@ -1,0 +1,2 @@
+# tidak upload node_modules yang berisi typescript karena ukuran folder cukup besar
+node_modules/
