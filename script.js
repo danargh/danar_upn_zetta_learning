@@ -81,7 +81,7 @@ const purchasedBook = bookPurchase({
    title: "Habis gelap terbitlah terang",
    price: 10000,
    isPurchased: false,
-   amount: 10,
+   amount: 7,
    creditMonth: 6,
 });
 
