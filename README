@@ -1,3 +1,5 @@
+# Saya membuat folder Module1 untuk membuat component baru yang mengimplementasikan data binding
+
 1. Angular adalah framework yang digunakan untuk membangun aplikasi one-page client menggunakan HTML dan Typescript
 2. Konsep angular :
    a. Ditulis menggunakan bahasa Typescript
