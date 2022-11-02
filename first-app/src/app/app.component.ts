@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
    styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-   title = 'Tour of Heroes';
+   taskList = [
+      { taskName: 'Mengerjakan MHP', taskDesc: 'deadline jam 12 malam' },
+   ];
+   onAddTask(taskData: { task_name: any; task_desc: any }) {
+      this.taskList.push({
+         taskName: taskData.task_name,
+         taskDesc: taskData.task_desc,
+      });
+   }
 }

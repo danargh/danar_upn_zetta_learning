@@ -1,0 +1,38 @@
+<ol class="list-group">
+   <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+         <div class="fw-bold">{{ taskName }}</div>
+         {{ taskDesc }}
+      </div>
+   </li>
+</ol>
+<hr />
+<div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label">Task Name</label>
+   <input
+      type="email"
+      class="form-control"
+      id="exampleFormControlInput1"
+      placeholder="Activity name"
+      [(ngModel)]="taskName"
+   />
+</div>
+<div class="mb-3">
+   <label for="exampleFormControlTextarea1" class="form-label"
+      >Description</label
+   >
+   <textarea
+      class="form-control"
+      id="exampleFormControlTextarea1"
+      rows="3"
+      [(ngModel)]="taskDesc"
+   ></textarea>
+</div>
+<button
+   class="btn btn-primary"
+   (click)="onAddTask()"
+   [disabled]="taskName === ''"
+>
+   Tambah
+</button>
+<hr />

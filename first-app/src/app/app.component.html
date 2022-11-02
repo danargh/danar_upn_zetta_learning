@@ -1,1 +1,6 @@
-<h1>Task Management</h1>
+<div class="container p-3">
+   <h1 class="text-md-center text-primary">Task Management : Angular Day 3</h1>
+   <h6>Predisplay</h6>
+   <app-input-task (itCreated)="onAddTask($event)"></app-input-task>
+   <app-tasks *ngFor="let list of taskList" [tasks]="list"></app-tasks>
+</div>
