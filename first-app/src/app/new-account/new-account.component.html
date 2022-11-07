@@ -1,0 +1,26 @@
+<div style="border: 2px solid rgb(219, 219, 219); padding: 16px">
+   <p>
+      <mat-form-field appearance="outline">
+         <mat-label>Account Name</mat-label>
+         <input matInput placeholder="Placeholder" #accountName />
+         <mat-icon matSuffix>people</mat-icon>
+         <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+   </p>
+   <mat-form-field appearance="fill">
+      <mat-label>Select</mat-label>
+      <mat-select #status>
+         <mat-option value="active">Active</mat-option>
+         <mat-option value="inactive">Inactive</mat-option>
+         <mat-option value="hidden">Hidden</mat-option>
+      </mat-select>
+   </mat-form-field>
+   <br />
+   <button
+      mat-raised-button
+      color="primary"
+      (click)="onCreateAccount(accountName.value, status.value)"
+   >
+      Add Account
+   </button>
+</div>
