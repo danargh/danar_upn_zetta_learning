@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -34,25 +35,16 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatButtonModule } from '@angular/material/button';
-import { ContentMovieComponent } from './movie/content-movie/content-movie.component';
-import { ContentActorComponent } from './actor/content-actor/content-actor.component';
-import { ContentAboutComponent } from './about/content-about/content-about.component';
-import { MoviesDataService } from './data/movies-data.service';
+import { DataServiceService } from './service/data-service.service';
+import { TruthPipe } from './pipe/truth.pipe';
+import { SearchPipe } from './pipe/search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContentMovieComponent,
-    ContentActorComponent,
-    ContentAboutComponent
-  ],
+  declarations: [AppComponent, TruthPipe, SearchPipe],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    BrowserModule,
-    MatButtonModule,
     MatInputModule,
     MatAutocompleteModule,
     MatDatepickerModule,
@@ -80,9 +72,11 @@ import { MoviesDataService } from './data/movies-data.service';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [MoviesDataService],
-  bootstrap: [AppComponent]
+  providers: [DataServiceService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
