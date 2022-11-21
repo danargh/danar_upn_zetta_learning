@@ -1,1 +1,35 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div class="side-content m-5">
+      <h1 style="margin-left: 8% ; margin-top:4%">MOVIES</h1>
+      <hr>
+      <ul style="list-style:none ;">
+        <li>
+          <a routerLink="/movie">
+            <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+              <mat-icon>home</mat-icon>
+            </button>
+            Movie List
+          </a>
+        </li>
+        <li>
+          <a routerLink="/actor">
+            <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+            Actor List
+          </a>
+        </li>
+        <li>
+          <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+          About
+        </li>
+      </ul>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
